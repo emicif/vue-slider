@@ -46,7 +46,18 @@ const app = new Vue (
     data: {
         slides,
         activeSlideIndex: 0,
-
+    },
+    methods: {
+        showPrevSlide(){
+            if (this.activeSlideIndex > 0) {
+                this.activeSlideIndex --;
+            }
+        },
+        showNextSlide(){
+            if (this.activeSlideIndex < this.slides.length -1) {
+                this.activeSlideIndex ++;
+            }
+        }
     }
     }
 );
