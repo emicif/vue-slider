@@ -1,3 +1,6 @@
+
+console.log('JS OK')
+
 const slides = [
     {
         image: 'img/01.jpg',
@@ -41,7 +44,9 @@ const app = new Vue (
     {
     el: '#app',
     data: {
-        
+        slides,
+        activeSlideIndex: 0,
+
     }
     }
 );
